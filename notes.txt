@@ -1,0 +1,30 @@
+
+Part 1
+
+------------------------------------------------------
+
+date - Display date
+cal - Calendar application
+df - Display free space on disk drives
+free - Display free memory
+exit - End terminal session
+Ctrl-Alt-Fx - Access terminal session
+
+Selected text is automatically copied.
+Press middle mouse button to paste it.
+
+------------------------------------------------------
+
+pwd - Display current working directory
+cd - Change directory (absolute or relative pathname)
+ls - Display directory contents
+. - Working directory
+.. - Upper directory
+
+For unspecified paths, working directory is assumed.
+Shortcuts:
+  'cd' - Home directory
+  'cd -' - Previous working directory
+  'cd ~username' - User home directory
+
+------------------------------------------------------
