@@ -3,28 +3,51 @@ Part 1
 
 ------------------------------------------------------
 
-date - Display date
-cal - Calendar application
-df - Display free space on disk drives
-free - Display free memory
-exit - End terminal session
-Ctrl-Alt-Fx - Access terminal session
+Chapter 1
+
+date - display date
+cal - calendar application
+df - display free space on disk drives
+free - display free memory
+exit - end terminal session
+Ctrl-Alt-Fx - access terminal session
 
 Selected text is automatically copied.
 Press middle mouse button to paste it.
 
 ------------------------------------------------------
 
-pwd - Display current working directory
-cd - Change directory (absolute or relative pathname)
-ls - Display directory contents
-. - Working directory
-.. - Upper directory
+Chapter 2
+
+pwd - display current working directory
+cd - change directory (absolute or relative pathname)
+ls - display directory contents
+. - working directory
+.. - upper directory
 
 For unspecified paths, working directory is assumed.
 Shortcuts:
-  'cd' - Home directory
-  'cd -' - Previous working directory
-  'cd ~username' - User home directory
+  'cd' - home directory
+  'cd -' - previous working directory
+  'cd ~username' - user home directory
 
 ------------------------------------------------------
+
+Chapter 3
+
+file - display file type
+less - display file contents
+
+Commands can take different options, for example: 'ls -lt --reverse'.
+This results in long format output sorted by file modification date in reverse order.
+There are also other options available for ls command.
+
+The Linux operating system contains many typical directories.
+Symbolic links allow to have a file referenced by multiple names.
+
+------------------------------------------------------
+
+Chapter 4
+
+------------------------------------------------------
+
