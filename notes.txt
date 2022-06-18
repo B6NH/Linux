@@ -22,6 +22,7 @@ Chapter 2
 pwd - display current working directory
 cd - change directory (absolute or relative pathname)
 ls - display directory contents
+'ls -a, --all' - do not ignore entries starting with .
 . - working directory
 .. - upper directory
 
@@ -37,10 +38,22 @@ Chapter 3
 
 file - display file type
 less - display file contents
+'ls ~ /usr' - list many directories
+
+File information:
+  -rw-r--r-- 1 root root 3576296 2017-04-03 11:05 Experience ubuntu.ogg
+
+Access rights(owner, group, everyone):
+  leading
+    dash - regular file
+    d - directory
+Number of hard links, Owner, Group, Size, Modification time, File name
 
 Commands can take different options, for example: 'ls -lt --reverse'.
 This results in long format output sorted by file modification date in reverse order.
 There are also other options available for ls command.
+
+Double click on file to copy its name.
 
 The Linux operating system contains many typical directories.
 Symbolic links allow to have a file referenced by multiple names.
@@ -48,6 +61,34 @@ Symbolic links allow to have a file referenced by multiple names.
 ------------------------------------------------------
 
 Chapter 4
+
+cp - copy files/directories
+mv - move and rename files/directories
+mkdir - create directory
+rm - remove files/directories
+ln - create links(hard/symbolic)
+
+Wildcards allow to select filenames based on patterns.
+Hard link is indistinguishable from the file itself.
+File is deleted when all hard links are deleted.
+If file referred to by the symbolic link is deleted, link will be broken.
+Use ls with -i option to display inode number.
+Hard links can only be used with files.
+Use ln with -s option to create symbolic link.
+Leading l indicates symbolic link.
+Path to file is relative to path of symbolic link.
+
+------------------------------------------------------
+
+Chapter 5
+
+------------------------------------------------------
+
+Chapter 6
+
+------------------------------------------------------
+
+Chapter 7
 
 ------------------------------------------------------
 
