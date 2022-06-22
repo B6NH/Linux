@@ -20,7 +20,7 @@ Press middle mouse button to paste it.
 Chapter 2
 
 pwd - display current working directory
-cd - change directory (absolute or relative pathname)
+cd - change directory(absolute or relative pathname)
 ls - display directory contents
 'ls -a, --all' - do not ignore entries starting with .
 . - working directory
@@ -81,6 +81,17 @@ Path to file is relative to path of symbolic link.
 ------------------------------------------------------
 
 Chapter 5
+
+type - display command type(shell builtin, executable program, shell function, alias)
+which - display executable location
+help - help for shell builtins
+man - display manual page(manual section can be specified)
+apropos - search man pages by keyword(same as 'man -k')
+whatis - display one-line manual page descriptions
+info - GNU Project alternative to man pages
+alias - create command alias
+
+Commands can be separated by semicolons.
 
 ------------------------------------------------------
 
