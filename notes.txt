@@ -3,7 +3,7 @@ Part 1
 
 ------------------------------------------------------
 
-Chapter 1
+Chapter 1 - What Is the Shell?
 
 date - display date
 cal - calendar application
@@ -17,7 +17,7 @@ Press middle mouse button to paste it.
 
 ------------------------------------------------------
 
-Chapter 2
+Chapter 2 - Navigation
 
 pwd - display current working directory
 cd - change directory(absolute or relative pathname)
@@ -34,7 +34,7 @@ Shortcuts:
 
 ------------------------------------------------------
 
-Chapter 3
+Chapter 3 - Exploring the System
 
 file - display file type
 less - display file contents
@@ -47,20 +47,19 @@ Access rights(owner, group, everyone):
   leading
     dash - regular file
     d - directory
+    l - symbolic link
 Number of hard links, Owner, Group, Size, Modification time, File name
 
 Commands can take different options, for example: 'ls -lt --reverse'.
 This results in long format output sorted by file modification date in reverse order.
 There are also other options available for ls command.
-
 Double click on file to copy its name.
-
 The Linux operating system contains many typical directories.
 Symbolic links allow to have a file referenced by multiple names.
 
 ------------------------------------------------------
 
-Chapter 4
+Chapter 4 - Manipulating Files and Directories
 
 cp - copy files/directories
 mv - move and rename files/directories
@@ -71,7 +70,7 @@ ln - create links(hard/symbolic)
 Wildcards allow to select filenames based on patterns.
 Hard link is indistinguishable from the file itself.
 File is deleted when all hard links are deleted.
-If file referred to by the symbolic link is deleted, link will be broken.
+If file referred to by symbolic link is deleted, link will be broken.
 Use ls with -i option to display inode number.
 Hard links can only be used with files.
 Use ln with -s option to create symbolic link.
@@ -80,7 +79,7 @@ Path to file is relative to path of symbolic link.
 
 ------------------------------------------------------
 
-Chapter 5
+Chapter 5 - Working with Commands
 
 type - display command type(shell builtin, executable program, shell function, alias)
 which - display executable location
@@ -95,11 +94,49 @@ Commands can be separated by semicolons.
 
 ------------------------------------------------------
 
-Chapter 6
+Chapter 6 - Redirection
+
+> - redirect standard output
+>> - redirect and append output
+2> - redirect error with file descriptor
+0, 1, 2 - file descriptors for input, output and error
+cat - read and copy file to output
+'cat movie.mpeg.0* > movie.mpeg' - join files
+'cat > lazy_dog.txt' - write to text file
+| - pass output of one command to input of another(pipeline)
+'ls /bin /usr/bin | sort | less' - sort command output and display it with less
+uniq - remove or display(-d) duplicates
+wc - display number of lines, words and bytes
+grep - find text patterns
+head/tail - display beginning or end of file(10 lines)
+'ls /usr/bin | tail -n 5' - last 5 lines
+'tail -f /var/log/messages' - view file in real time
+tee - read standard input and copy it to standard output and file(s)
+'ls /usr/bin | tee ls.txt | grep zip' - pass output to file and grep
+
+Output and error can be redirected to 1 file:
+  'ls -l /bin/usr > ls-output.txt 2>&1' - redirect output to file and error to output
+  'ls -l /bin/usr &> ls-output.txt' - newer method
+
+Both methods can be used with append notation.
+Output can be redirected to "/dev/null".
+Commands used with pipeline operator are called filters.
 
 ------------------------------------------------------
 
-Chapter 7
+Chapter 7 - Seeing the World as the Shell Sees It
+
+------------------------------------------------------
+
+Chapter 8 - Advanced Keyboard Tricks
+
+------------------------------------------------------
+
+Chapter 9 - Permissions
+
+------------------------------------------------------
+
+Chapter 10 - Processes
 
 ------------------------------------------------------
 
