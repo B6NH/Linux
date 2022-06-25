@@ -54,7 +54,7 @@ Commands can take different options, for example: 'ls -lt --reverse'.
 This results in long format output sorted by file modification date in reverse order.
 There are also other options available for ls command.
 Double click on file to copy its name.
-The Linux operating system contains many typical directories.
+Linux operating system contains many typical directories.
 Symbolic links allow to have a file referenced by multiple names.
 
 ------------------------------------------------------
@@ -68,7 +68,7 @@ rm - remove files/directories
 ln - create links(hard/symbolic)
 
 Wildcards allow to select filenames based on patterns.
-Hard link is indistinguishable from the file itself.
+Hard link is indistinguishable from file itself.
 File is deleted when all hard links are deleted.
 If file referred to by symbolic link is deleted, link will be broken.
 Use ls with -i option to display inode number.
@@ -125,6 +125,24 @@ Commands used with pipeline operator are called filters.
 ------------------------------------------------------
 
 Chapter 7 - Seeing the World as the Shell Sees It
+
+echo - display text
+'echo *' - display filenames
+'echo $(((5**2) * 3))' - arithmetic expression
+'echo file_{1..5}' - brace expansion
+printenv - display available variables
+'echo $USER' - display value of USER variable
+'ls -l $(which cp)' - expand command(alternatively, backticks can be used)
+'echo "text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER"' - suppress expansion
+'echo "The balance for user $USER is: \$5.00"' - escaping character
+'echo -e "Time's up\a"' - use bell escape sequence(-e to enable backslash escapes)
+
+Expansion works with paths, tilde, arithmetic expressions.
+Brace expansion allows to create multiple strings from pattern.
+Parameter expansion makes use of variables.
+Expansion can be used with command output.
+Quoting selectively suppresses expansion(single/double quotes).
+Backslash quotes one character and can be used to represent control codes.
 
 ------------------------------------------------------
 
