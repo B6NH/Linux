@@ -148,6 +148,19 @@ Backslash quotes one character and can be used to represent control codes.
 
 Chapter 8 - Advanced Keyboard Tricks
 
+clear - clear screen
+history - display history
+!1596 - history expansion
+!! - execute last command
+Ctrl-r - incremental search(Enter - execute, Ctrl-j - copy to command line, Ctrl-g/c - quit)
+script - record shell session(exit/Ctrl-d to quit)
+
+Readline library allows to edit text on command line.
+There are many keyboard shortcuts that can be used to move cursor and modify text.
+Pressing tab key while typing activates completion function.
+Exclamation mark and line number from history allow quick use of command.
+Esc can be used instead of meta key.
+
 ------------------------------------------------------
 
 Chapter 9 - Permissions
