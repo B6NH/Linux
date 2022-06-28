@@ -22,7 +22,7 @@ Chapter 2 - Navigation
 pwd - display current working directory
 cd - change directory(absolute or relative pathname)
 ls - display directory contents
-'ls -a, --all' - do not ignore entries starting with .
+'ls -a, --all' - do not ignore entries starting with '.'
 . - working directory
 .. - upper directory
 
@@ -48,6 +48,8 @@ Access rights(owner, group, everyone):
     dash - regular file
     d - directory
     l - symbolic link
+    c - character special file
+    b - block special file
 Number of hard links, Owner, Group, Size, Modification time, File name
 
 Commands can take different options, for example: 'ls -lt --reverse'.
@@ -71,9 +73,9 @@ Wildcards allow to select filenames based on patterns.
 Hard link is indistinguishable from file itself.
 File is deleted when all hard links are deleted.
 If file referred to by symbolic link is deleted, link will be broken.
-Use ls with -i option to display inode number.
+Use ls with '-i' option to display inode number.
 Hard links can only be used with files.
-Use ln with -s option to create symbolic link.
+Use ln with '-s' option to create symbolic link.
 Leading l indicates symbolic link.
 Path to file is relative to path of symbolic link.
 
@@ -135,7 +137,7 @@ printenv - display available variables
 'ls -l $(which cp)' - expand command(alternatively, backticks can be used)
 'echo "text ~/*.txt {a,b} $(echo foo) $((2+2)) $USER"' - suppress expansion
 'echo "The balance for user $USER is: \$5.00"' - escaping character
-'echo -e "Time's up\a"' - use bell escape sequence(-e to enable backslash escapes)
+'echo -e "Time's up\a"' - use bell escape sequence('-e' to enable backslash escapes)
 
 Expansion works with paths, tilde, arithmetic expressions.
 Brace expansion allows to create multiple strings from pattern.
@@ -164,6 +166,37 @@ Esc can be used instead of meta key.
 ------------------------------------------------------
 
 Chapter 9 - Permissions
+
+id - display user identity
+  uid - user id
+  gid - primary group
+chmod - change file mode
+'chmod 600 foo.txt' - set file mode to -rw-------(110-000-000)
+'chmod +x/a+x' - add execute permission for all
+'chmod u+rw' - add read and write permissions for owner
+'chmod u+x,go=rx' - add execute permission for owner, set group and world permissions to 'r' and 'x'
+umask - set default permissions
+'umask 0022' - remove default write permissions for group owner and world(000-000-010-010)
+'chmod u+s program' - assign setuid to program(set effective user ID to program owner - program runs with owner privileges)
+'chmod g+s dir' - assign setgid to directory(set effective group ID to directory owner - new files will be given group ownership of directory)
+'chmod +t dir' - assign sticky bit to directory(prevent users, except file/directory owner and superuser, from deleting or renaming files)
+su - run shell as another user('-l/-' - start shell as login shell, '-c' - execute single command)
+sudo - execute command as another user
+chown - change file owner and group
+'chown bob one.txt' - change file owner to bob
+'chown bob:users two.txt' - change file owner to bob and group owner to users
+'chown :admins three.txt' - change group owner to admins
+'chown bob: four.txt' - change file owner to bob and group owner to bob's login group
+chgrp - change group ownership(in older versions of Unix)
+passwd - change password
+
+User accounts and groups are defined in '/etc/passwd' and '/etc/groups' files, respectively.
+File with user password information - '/etc/shadows'.
+File mode consists of 9 characters(3 for each type) - owner, group owner, world.
+Permission attributes are denoted by letters 'r', 'w' and 'x'(read, write, execute).
+Symbolic links have 'dummy' permissions.
+File modes can be set using octal number system or symbolic notation.
+Linux ignores sticky bit on files.
 
 ------------------------------------------------------
 
