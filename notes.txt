@@ -1,5 +1,7 @@
 
-Part 1
+------------------------------------------------------
+
+Part 1 - Learning the Shell
 
 ------------------------------------------------------
 
@@ -201,6 +203,35 @@ Linux ignores sticky bit on files.
 ------------------------------------------------------
 
 Chapter 10 - Processes
+
+ps - display processes of current terminal
+'ps x' - display processes of all terminals
+'ps aux' - more information about processes
+top - dynamic process overview
+Ctrl-c - interrupt program(politely) - INT signal
+'leafpad/kwrite/gedit &' - put process in background(command returns job number and PID - job control)
+jobs - list jobs launched from current terminal
+fg %1 - return process with job number/jobspec 1 to foreground(if there is only one process jobspec is optional)
+Ctrl-z - stop/pause process and put it in background - TSTP signal
+bg %1 - resume program execution in background
+'kill 3431/%2' - terminate program with PID = 3431 or jobspec = 2 - TERM signal
+'kill -1 3552' - send HUP(1) signal to process
+'kill -INT/-SIGINT 3567' - send INT signal
+'kill -l' - display list of signals
+'killall featherpad' - send signals to multiple(featherpad) processes
+reboot - reboot machine
+'sudo shutdown -h/-r now' - halt/reboot system
+pstree - display process tree
+vmstat - display system resource usage
+xload/tload - draw system load over time(graphical/terminal)
+
+When system starts up, kernel turns on several processes and launches 'init' program.
+Program 'init' runs shell(init) scripts located in '/etc'.
+Parent process produces child process.
+Each process is assigned a PID number(init PID = 1).
+Running programs from command line allows user to use additional options and read error messages.
+Signals may be specified by number or by name(also with SIG prefix).
+To send signal to process user must be its owner or superuser.
 
 ------------------------------------------------------
 
