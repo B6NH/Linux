@@ -1,0 +1,28 @@
+
+------------------------------------------------------
+
+Part 2 - Configuration and the Environment
+
+------------------------------------------------------
+
+Chapter 11 - The Environment
+
+printenv - display environment variables
+'printenv USER/echo USER' - display USER variable
+set - display shell and environment variables(plus shell functions)
+alias - display aliases
+
+Shell variables are set by bash.
+There are 2 types of sessions: login shell session and non-login shell session.
+There are configuration files for each type of session.
+One of the most important configuration files is .bashrc.
+
+------------------------------------------------------
+
+Chapter 12 - A Gentle Introduction to vi
+
+------------------------------------------------------
+
+Chapter 13 - Customizing the Prompt
+
+------------------------------------------------------
