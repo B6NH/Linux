@@ -21,6 +21,35 @@ One of the most important configuration files is .bashrc.
 
 Chapter 12 - A Gentle Introduction to vi
 
+:q/:q! - quit
+i - insert mode
+Esc - exit insert mode
+: - ex command
+:w - save file
+u - undo
+Ctrl-r - redo
+a/A - append text
+A - append text at the end of line
+o/O - newline below/above cursor
+x - delete current character
+y - copy text
+d - delete/cut text
+p/P - paste before/after cursor
+J - join lines
+f - search character in line
+/ - search in file
+n - continue searching
+:%s/Line/line/g - replace word "Line" with "line"
+:bn/bp - next/previous file
+:buffers - display list of edited files
+':buffer 5' - switch to buffer 5
+':e file.txt' - add file to current session
+':r input.txt' - paste contents of file below cursor position
+ZZ - save and exit
+
+Vim starts in command mode.
+Multiple files can be opened by specifying them on command line.
+
 ------------------------------------------------------
 
 Chapter 13 - Customizing the Prompt
