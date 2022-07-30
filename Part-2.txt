@@ -54,4 +54,16 @@ Multiple files can be opened by specifying them on command line.
 
 Chapter 13 - Customizing the Prompt
 
+PS1="\A \h \$ " - display time and hostname
+PS1="\[\033[0;31m\]<\u@\h \W>\$\[\033[0m\] " - red prompt and black text
+PS1="\[\033[0;41m\]<\u@\h \W>\$\[\033[0m\] " - red background
+PS1="\[\033[s\033[0;0H\033[0;41m\033[K\033[1;33m\t\033[0m\033[u\]<\u@\h \W>\$ " - clock
+'export PS1' - read command line configuration from '.bashrc' file
+
+Command prompt can be configured with variable PS1.
+Escape codes can be used to set text colors.
+Character attributes change appearance of text.
+Using escape sequences, it is also possible to control position of cursor.
+
 ------------------------------------------------------
+
