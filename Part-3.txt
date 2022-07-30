@@ -7,6 +7,21 @@ Part 3 - Common Tasks and Essential Tools
 
 Chapter 14 - Package Management
 
+'yum search emacs' - package search
+'apt-get install emacs' - package installation
+'rpm -i emacs-22.1-7.fc7-i386.rpm' - installation from file
+'apt-get remove emacs' - package removal
+'apt-get update; apt-get upgrade' - update packages
+'rpm -U emacs-22.1-7.fc7-i386.rpm' - update package from file
+'dpkg -l' - display installed packages
+'dpkg --status emacs' - display package status
+'dpkg -S emacs' - search for filename from installed packages
+
+The most popular packaging systems are deb and rpm.
+Majority of Linux software can be found on the Internet.
+Packages are usually created by distribution vendors.
+Device drivers are part of Linux kernel.
+
 ------------------------------------------------------
 
 Chapter 15 - Storage Media
