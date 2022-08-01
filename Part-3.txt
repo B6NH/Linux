@@ -26,6 +26,23 @@ Device drivers are part of Linux kernel.
 
 Chapter 15 - Storage Media
 
+mount - list currently mounted file systems
+umount - unmount file system
+'tail -f /var/log/syslog' - observe syslog file in real time
+'fdisk /dev/sdb' - configure disk partitions
+'mkfs -t ext4 /dev/sdb1' - create filesystem on partition sdb1
+fsck - check and repair filesystem
+'dd if=/dev/sdb of=/dev/sdc' - copy data from one device to another
+'dd if=/dev/sdb of=flash_drive.img' - copy data to file
+'genisoimage -o cd-rom.iso -R -J ~/cd-rom-files' - create ISO image
+'mount -o loop image.iso /mnt/iso_image' - mount image
+
+File '/etc/fstab' contains list of devices that are mounted at boot time.
+Name of disk can be read from file '/var/log/syslog'.
+Command dd works only for disks with filesystems.
+Integrity of ISO image can be verified with md5sum command.
+Programs cdrdao and wodim can be used to write data to CDs and DVDs.
+
 ------------------------------------------------------
 
 Chapter 16 - Networking
