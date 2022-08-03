@@ -47,6 +47,20 @@ Programs cdrdao and wodim can be used to write data to CDs and DVDs.
 
 Chapter 16 - Networking
 
+ping - send ICMP ECHO_REQUEST
+traceroute - print packet route
+ip - network configuration tool
+netstat - examine network settings and statistics
+ftp - internet file transfer
+'get ubuntu-18.04-desktop-amd64.iso' - transfer file to local system(ftp session)
+'wget http://linuxcommand.org/index.php' - download page
+
+Some FTP servers require password in for of email address.
+On most anonymous FTP servers files for public downloading are found in 'pub' directory.
+Program ssh is used to log into remote machines.
+Using ssh, it is possible to execute commands and run GUI programs.
+Commands scp and sftp allow files to be copied through ssh-encrypted tunnel.
+
 ------------------------------------------------------
 
 Chapter 17 - Searching for Files
