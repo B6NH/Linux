@@ -83,6 +83,20 @@ To combine arguments, one can use find with '+' option or function xargs.
 
 Chapter 18 - Archiving and Backup
 
+gzip - compress and replace file
+gunzip - restore compressed file to its original form
+'zcat/gunzip -c' - view contents of compressed file
+'tar cf playground.tar playground' - create archive
+'tar xf ../playground.tar' - extract archive
+zip - package and compress archive files
+unzip - extract zip archive
+'rsync -av playground foo' - synchronize directories
+'rsync source/ destination' - copy only contents of source directory
+
+There are 2 types of compression algorithms: lossy and lossless.
+Higher compression levels can be achieved with bzip2.
+Program rsync is used to synchronize directories.
+
 ------------------------------------------------------
 
 Chapter 19 - Regular Expressions
