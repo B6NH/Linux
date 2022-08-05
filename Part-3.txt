@@ -65,6 +65,20 @@ Commands scp and sftp allow files to be copied through ssh-encrypted tunnel.
 
 Chapter 17 - Searching for Files
 
+locate/mlocate - find file by name
+find - find file in directory
+'find ~' - list all files in home directory
+'find ~ -type d | wc -l' - display number of directories in home directory
+'find ~ -type f -name "*.JPG" -size +1M | wc -l' - find .jpg files larger than 1 mb
+'find ~ -type f -name '*.bak' -delete' - delete files with .bak extension
+'find ~ -iname '*.jpg' -print0 | xargs --null ls -l' - xargs with null as separator
+stat - display file status
+
+Command 'find' can perform various tests on files.
+Individual conditions can be combined with logical operators.
+User-defined actions are called by applying -exec and -ok commands.
+To combine arguments, one can use find with '+' option or function xargs.
+
 ------------------------------------------------------
 
 Chapter 18 - Archiving and Backup
