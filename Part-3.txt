@@ -101,6 +101,25 @@ Program rsync is used to synchronize directories.
 
 Chapter 19 - Regular Expressions
 
+grep - global regular expression print
+. - match 1 character
+^ $ - beginning and end anchors
+[tc] - set of characters
+[^km] - negation
+[:graph:] - character class
+'AAA | BBB' - alternation
+Quantifier matching:
+  ? - 1 or 0 elements
+  * - 0 or more elements
+  + - at least 1 element
+  {5} - 5 elements
+
+Regular expressions are used to identify patterns in text.
+Metacharacters specify complex patterns.
+Types of regular expressions:
+  - basic regular expressions (BRE)
+  - extended regular expressions (ERE)
+
 ------------------------------------------------------
 
 Chapter 20 - Text Processing
