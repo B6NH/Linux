@@ -124,6 +124,24 @@ Types of regular expressions:
 
 Chapter 20 - Text Processing
 
+'cat -A foo.txt' - display non-printing characters
+sort - sort lines of text files
+'ls -l /usr/bin | sort -nrk 5 | head' - reverse numerical sort with 5th field key
+uniq - omit repeated lines in sorted file
+'cut -f 3 distros.txt' - extract 3rd tab-separated field
+paste - add columns of text to file
+join - join sorted files with common fields
+comm - simple file comparison
+diff - advanced file comparison
+patch - modify file with diff output
+tr - transliterate characters
+'echo "front" | sed '1s/front/back/'' - replace 'front' with 'back' in first line
+aspell - spell check
+
+The sed program edits streams of text.
+Back references are commands that use results of previous matches.
+For more complicated tasks, it is possible to create sed scripts.
+
 ------------------------------------------------------
 
 Chapter 21 - Formatting Output
