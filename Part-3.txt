@@ -146,6 +146,16 @@ For more complicated tasks, it is possible to create sed scripts.
 
 Chapter 21 - Formatting Output
 
+'nl distros.txt' - display file with line numbers
+'echo "The quick brown fox jumped over" | fold -w 12' - set line width
+'fmt -w 50 -p '# ' fmt-code.txt' - format lines starting with '# '
+'pr -l 15 -w 65 distros.txt' - paginate text
+printf - format and print data
+
+There are many simple command line tools for formatting text.
+Programs that convert files are usually named using 'format2format' convention.
+Two advanced text formatting tools are TEX and groff.
+
 ------------------------------------------------------
 
 Chapter 22 - Printing
