@@ -160,9 +160,30 @@ Two advanced text formatting tools are TEX and groff.
 
 Chapter 22 - Printing
 
+pr - convert text files for printing
+a2ps - convert files to PostScript
+lpstat - display status of printers
+lpq - display printer queue
+lprm/cancel - cancel print jobs (Berkeley/System V)
+
+There are 2 main suites of Linux printing programs:
+  - Common Unix Printing System (CUPS)
+  - Ghostscript (PostScript interpreter)
+CUPS printing methods:
+  - lpr (Berkeley)
+  - lp (System V)
+
 ------------------------------------------------------
 
 Chapter 23 - Compiling Programs
+
+make - maintain groups of programs
+./configure - analyze build environment
+'make install' - install program
+
+Compilation is translation of source code into processor's native language.
+Libraries contain multiple routines performing common tasks.
+The 'Makefile' includes instructions for 'make' program.
 
 ------------------------------------------------------
 
