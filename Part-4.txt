@@ -7,17 +7,43 @@ Part 4 - Writing Shell Scripts
 
 Chapter 24 - Writing Your First Script
 
+Shell script starts with shebang.
+They should be readable and executable.
+Scripts are usually located in 'bin' directory.
+
 ------------------------------------------------------
 
 Chapter 25 - Starting a Project
+
+'declare -r TITLE="Page Title"' - constant
+'declare -i NUMBER=12' - integer
+
+Variables contain values.
+Constants are denoted by uppercase letters.
+Text can be output using 'echo' command or here document.
 
 ------------------------------------------------------
 
 Chapter 26 - Top-Down Design
 
+Shell functions can be defined in script or '.bashrc' file.
+Local variables are visible only inside subroutines.
+Global variables exist throughout the program.
+
 ------------------------------------------------------
 
 Chapter 27 - Flow Control: Branching with if
+
+Branching is possible with 'if' statement.
+Exit status indicates success or failure of command.
+The 'test' command appears in two forms.
+Logical operators:
+  - AND
+  - OR
+  - NOT
+Compound commands:
+  modern test - '[[ ]]'
+  integers - '(( ))'
 
 ------------------------------------------------------
 
