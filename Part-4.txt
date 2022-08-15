@@ -49,13 +49,28 @@ Compound commands:
 
 Chapter 28 - Reading Keyboard Input
 
+Data from standard input can be read with 'read' command.
+By default, output returned by 'read' is stored in 'REPLY'.
+Variable 'IFS' specifies which character is treated as separator.
+
 ------------------------------------------------------
 
 Chapter 29 - Flow Control: Looping with while / until
 
+Loops allow to perform actions multiple times.
+Two common types of loops are 'while' and 'until'.
+The 'continue' function allows programmer to skip rest of loop.
+To exit loop one can use 'break' command.
+
 ------------------------------------------------------
 
 Chapter 30 - Troubleshooting
+
+The most common syntactic errors are missing parentheses and tokens.
+Another type of errors are those related to expansion.
+Even if program works, it may contain logical errors.
+It is good practice to enclose variables in double quotes.
+Testing and debugging helps create robust software.
 
 ------------------------------------------------------
 
