@@ -76,13 +76,26 @@ Testing and debugging helps create robust software.
 
 Chapter 31 - Flow Control: Branching with case
 
+Compound command 'case' performs action depending on value of variable.
+Multiple patterns can be combined with logical operator 'or'.
+Placing ';;&' at the end of action will cause next conditions to be checked.
+
 ------------------------------------------------------
 
 Chapter 32 - Positional Parameters
 
+Positional parameters store words read from command line.
+Variable '$#' contains number of passed arguments.
+The 'shift' command moves values of arguments.
+Special parameters '*' and '@' expand into lists.
+
 ------------------------------------------------------
 
 Chapter 33 - Flow Control: Looping with for
+
+The 'for' loop is available in two versions.
+By default, it processes positional parameters.
+The C language version of loop can create sequences of numbers.
 
 ------------------------------------------------------
 
