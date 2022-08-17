@@ -101,9 +101,27 @@ The C language version of loop can create sequences of numbers.
 
 Chapter 34 - Strings and Numbers
 
+Various types of parameter expansions are available.
+Some of them deal with problem of empty words.
+Others return variable names or are used with strings.
+They can also perform conversions and arithmetic operations.
+Various number bases, bit operations and logical operators are available.
+For more advanced mathematical operations, 'bc' program can be used.
+
 ------------------------------------------------------
 
 Chapter 35 - Arrays
+
+'declare -a a' - declare array
+'echo ${#a[@]}' - number of array elements
+'foo+=(d e f)' - add elements at the end of array
+'unset arr' - delete array
+'declare -A colors' - declare associative array
+
+Arrays are variables that store multiple values.
+Their indices start at zero.
+Subscripts '@' and '*' return entire contents of array.
+They can be processed with loops.
 
 ------------------------------------------------------
 
