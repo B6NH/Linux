@@ -127,5 +127,15 @@ They can be processed with loops.
 
 Chapter 36 - Exotica
 
+'echo "foo" | read' - command runs in subshell
+'read < <(echo "foo")' - treat subshell output as normal file
+mktemp - create temporary file or directory
+
+Commands can be grouped together with group commands or subshells.
+Traps execute commands when signals are detected.
+Temporary files should have unpredictable names to avoid temp race attack.
+Asynchronous execution can be managed using 'wait' command.
+Named pipes are files used to create connections between processes.
+
 ------------------------------------------------------
 
